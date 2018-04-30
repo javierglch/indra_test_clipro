@@ -6,7 +6,6 @@
  * @author Javier javiergordoweb.ess
  */
 class ClientsController extends MY_Controller {
-    // <editor-fold defaultstate="collapsed" desc="FormActions">
 
     /**
      * Elimina un cliente existente
@@ -98,5 +97,4 @@ class ClientsController extends MY_Controller {
         return $this->render_json(['form_uuid' => $this->input->post('form_uuid')]);
     }
 
-    // </editor-fold>
 }

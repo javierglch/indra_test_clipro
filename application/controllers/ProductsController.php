@@ -18,7 +18,7 @@ class ProductsController extends MY_Controller {
             redirect($this->uri->uri_string());
         }
 
-        $result = $this->Products->updateFromURL('http://indratest.com.localhost/json_products.json');
+        $result = $this->Products->updateFromURL($this->input->post('url_products_json'));
 
         if ($result['update'] > 0) {
             $this->usersession->setFlash('alert-success', 'Se han actualizado ' . $result['update'] . ' prodcutos.');

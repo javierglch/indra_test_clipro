@@ -19,7 +19,7 @@ define('ROLE_BLOGGER', 2);
  *
  * @author Javier
  */
-class UserSession {
+class Usersession {
 
     /**
      * @var CI_Controller 

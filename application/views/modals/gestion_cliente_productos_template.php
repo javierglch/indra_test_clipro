@@ -51,5 +51,6 @@ $aProducts = $this->Products->selectAll();
         $('.datatable2').DataTable({
             paging: false
         });
+        $('.datatable2').find('th').css('width','');
     })
 </script>
