@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /_php_scripts/
+Disallow: /application/
+Disallow: /system/
+Disallow: /assets/uploads/
+Disallow: /assets/videos/
+Disallow: /index.html
+Disallow: /desktop.ini
+Disallow: /composer.json
+
+Crawl-delay: 60
+Visit-time: 0200-0745 
+Request-rate: 1/10m 1300-1659 
+Sitemap: https://leagueof.hexania.com/sitemap.xml

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hexania</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon" href="/assets/images/favicon.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style type="text/css">
+            body{
+                padding:0;
+                margin:0;
+                background-image: url('assets/images/bg-blur.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center center;
+                text-align: center;
+            }
+
+            main {
+                height:100vh;
+                width:100vw;
+                display:table-cell;
+                vertical-align: middle;
+            }
+            
+            main img {
+                margin: 0 auto;
+            }
+
+            @font-face {
+                font-family: 'Berlin Sans FB';
+                font-style: normal;
+                font-weight: 400;
+                src: url(/assets/fonts/BRLNSR.woff) format('woff2');
+            }
+            p{
+                font-family: 'Berlin Sans FB';
+                color:#f4f4f4;
+                font-size:1.5em;
+            }
+            table{
+                width: 89%;
+                max-width: 500px;
+                margin:0 auto;
+            }
+            table td:nth-child(1){
+                width:30%;
+            }
+            table img{
+                width:100%;
+                height:auto;
+            }
+            table td:nth-child(2){
+                width:70%;
+            }
+            a,a:visited{
+                color:#f4f4f4;
+                text-decoration: none;
+            }
+            a:hover,a:link,a:focus{
+                color: #699dc3;
+                text-decoration: none;
+            }
+            .social-networks{
+                list-style: none;
+                margin-top:20px;
+            }
+            .social-networks li{
+               display:inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <img src="assets/images/logo-header.png" alt="logo de hexania.com" class="img-responsive"/>
+            <table>
+                <tr>
+                    <td>
+                        <img src="assets/images/ryze-profesor.png" alt="Ryze profesor trabajando para hexania"  class="img-responsive"/>
+                    </td>
+                    <td>
+                        <p>Si buscas análisis, los links son directos desde <a href="https://youtube.com/hexania">youtube</a>.</p>
+                        <p>Sígueme en <a target="_blank" href="https://twitter.com/leagueofhexania">@leagueofhexania</a>!</p>
+                    </td>
+                </tr>
+            </table>
+            <ul class="social-networks">
+                <li><a target="_blank" href="https://twitter.com/leagueofhexania" title="twitter"><img    style="height:64px;width:auto;"  src="/assets/images/redes-icons/withbg/icon-twitter.png" ></a></li>
+                <li><a target="_blank" href="https://facebook.com/leagueofhexania" title="facebook"><img  style="height:64px;width:auto;"  src="/assets/images/redes-icons/withbg/icon-facebook.png" ></a></li>
+                <li><a target="_blank" href="https://youtube.com/hexania" title="youtube"><img           style="height:64px;width:auto;"   src="/assets/images/redes-icons/withbg/icon-youtube.png" ></a></li>
+                <li><a target="_blank" href="https://instagram.com/leagueofhexania" title="instagram"><img style="height:64px;width:auto;" src="/assets/images/redes-icons/withbg/icon-instagram.png" ></a></li>
+            </ul>
+        </main>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106948148-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-106948148-1');
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-106948148-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+    </body>
+</html>

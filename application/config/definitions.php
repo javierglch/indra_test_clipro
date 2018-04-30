@@ -1,0 +1,23 @@
+<?php
+$config['def']=[];
+define('CFG_app_title', 'app_title');
+define('CFG_security_enabled', 'security_enabled');
+define('CFG_web_page_title', 'web_page_title');
+define('CFG_mailing', 'mailing');
+define('CFG_smsup', 'smsup');
+define('CFG_SMS_HEADER_FROM', 'SMS_HEADER_FROM');
+define('CFG_contact', 'contact');
+define('CFG_redes', 'redes');
+define('CFG_header_nav_links', 'header_nav_links');
+define('CFG_security', 'security');
+define('CFG_title_separator', 'title_separator');
+define('CFG_title', 'title_default');
+define('CFG_http_metas', 'http_metas');
+define('CFG_metas', 'metas');
+define('CFG_metas_properties', 'metas_properties');
+define('CFG_stylesheets', 'stylesheets');
+define('CFG_javascripts', 'javascripts');
+define('CFG_layout', 'layout');
+define('CFG_User_Class', 'User_Class');
+define('CFG_User_LoginColumn', 'User_LoginColumn');
+define('CFG_User_RoleColumn', 'User_RoleColumn');

@@ -1,0 +1,174 @@
+/* 
+    Created on : 03-abr-2018, 22:54:49
+    Author     : Javier
+*/
+
+$main_color: blue;
+
+#LoginForm{
+    max-width: 410px;
+    margin:0 auto;
+}
+
+
+#AdminPanel{
+
+    .datepicker .datepicker-days td, .datepicker .datepicker-days th{
+        width:40px;
+        height:40px;
+    }
+
+    .datepicker[readonly]{
+        background-color:inherit;
+    }
+
+    .box-shadow-1 {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .box-shadow-2 {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    .box-shadow-3 {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .box-shadow-4 {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .box-shadow-5 {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+
+    .ui-autocomplete {
+        z-index: 1000;
+        max-height: 200px;
+        overflow-y: auto;
+        max-width: 420px;
+    }
+
+    .datepicker.datepicker-dropdown{
+        z-index:1500 !important;
+    }
+
+    .table-width-100{
+        width:100%;min-width:100%;max-width: 100%;
+    }
+
+    .navbar-toggler{
+        border:none;
+    }
+    .sidebar{
+        position: fixed;
+        width:350px;
+        transition: ease-in-out 0.2s all;
+        left:0;
+        top:66px;
+        overflow-y:auto;
+
+        .nav{
+            .nav-item{
+                border-bottom: 1px solid $main_color;
+            }
+            .nav-link.active{
+                background: rgba(0,0,0,0.12);
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12) inset, 0 1px 2px rgba(0,0,0,0.24) inset;
+                color: $main_color;
+            }
+            .nav-item:last-child,.submenu .nav-item{
+                border-bottom: none;
+            }
+            .submenu{
+
+            }
+            .divider{
+                height: 0;
+                margin: .5rem 0;
+                overflow: hidden;
+                border-top: 1px solid #e9ecef;
+            }
+        }
+    }
+    .sidebar-fade{
+        display:none;
+    }
+
+    #MainSidebar.opened .sidebar{
+        left:0 !important;
+    }
+    .main-content{
+        padding-left:350px;
+        padding-top:76px;
+    }
+    @media(max-width:2900px){
+        .navbar-expand-lg .navbar-toggler{
+            display: initial;
+        }
+        .navbar-brand{
+            margin: 0 auto;
+        }
+        .main-content{
+            padding-left:0;
+            padding-top:76px;
+        }
+        .sidebar{
+            z-index: 600;
+            position: fixed;
+            width:310px;
+            left:-310px;
+        }
+        #MainSidebar{
+            .sidebar-fade{
+                position:fixed;
+                z-index: 500;
+                width:0%;
+                height: 100%;
+                background: rgba(0,0,0,0.3);
+                top:0;
+                left:0;
+                opacity: 0;
+                display: block;
+            }
+        }
+        #MainSidebar.opened{
+            .sidebar{
+                left:0 !important;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+            .sidebar-fade{
+                opacity: 1;
+                width:100%;
+            }
+        }
+    }
+    .underline{
+        text-decoration: underline;
+    }
+
+    .blogger-editor{
+        .options{
+            padding:0;
+            margin:0;
+            width:100%;
+            .option{
+                display:inline-block;
+                height:32px;
+                width:32px;
+                line-height: 32px;
+                font-size: 20px;
+                text-align: center;
+                cursor:pointer;
+                border: 1px solid transparent;
+                
+                &:hover{
+                    border-color:black;
+                }
+                &:active{
+                    background:rgba(0,0,0,0.3);
+                }
+            }
+        }
+    }
+}
